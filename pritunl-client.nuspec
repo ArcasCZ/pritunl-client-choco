@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pritunl-client</id>
+    <version>1.2.3236.80</version>
+    <packageSourceUrl>https://github.com/ArcasCZ/pritunl-client-choco</packageSourceUrl>
+    <owners>Vojtech.Olej,pk33</owners>
+    <title>pritunl-client (Install)</title>
+    <authors>zachhuff386</authors>
+    <projectUrl>https://client.pritunl.com/</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/ArcasCZ/pritunl-client-choco/master/icons/pritunl-client.png</iconUrl>
+    <projectSourceUrl>https://github.com/pritunl/pritunl-client-electron</projectSourceUrl>
+    <tags>pritunl-client pritunl vpn client</tags>
+    <description>Pritunl VPN Client for Windows</description>
+    <summary>Pritunl VPN Client for Windows</summary>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
