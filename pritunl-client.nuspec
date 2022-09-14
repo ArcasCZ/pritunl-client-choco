@@ -11,9 +11,11 @@
     <iconUrl>http://rawcdn.githack.com/ArcasCZ/pritunl-client-choco/master/icons/pritunl-client.png</iconUrl>
     <projectSourceUrl>https://github.com/pritunl/pritunl-client-electron</projectSourceUrl>
     <tags>pritunl-client pritunl vpn client</tags>
-    <description>Pritunl VPN Client for Windows</description>
+    <description>Pritunl client is an open source openvpn client using Electron. Documentation and more information can be found at the home page client.pritunl.com</description>
     <summary>Pritunl VPN Client for Windows</summary>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/pritunl/pritunl-client-electron/blob/master/LICENSE</licenseUrl>
+    <releaseNotes>https://github.com/pritunl/pritunl-client-electron/blob/master/CHANGES</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
