@@ -16,4 +16,9 @@ $packageArgs = @{
   validExitCodes= @(0,1)
 }
 
+# If Pritunl is already installed and running, we have to
+# kill the process. Otherwise the files won't be overwritten.
+
+Get-Process pritunl -ErrorAction SilentlyContinue | Stop-Process
+
 Install-ChocolateyPackage @packageArgs
