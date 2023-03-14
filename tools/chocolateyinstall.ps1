@@ -1,4 +1,6 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$Timeout = 20
+
+$ErrorActionPreference = 'Stop';
 
 $packageName= $env:ChocolateyPackageName
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
@@ -22,3 +24,21 @@ $packageArgs = @{
 Get-Process pritunl -ErrorAction SilentlyContinue | Stop-Process
 
 Install-ChocolateyPackage @packageArgs
+
+Write-Host "Waiting for installer to complete the operations."
+
+$timer = [Diagnostics.Stopwatch]::StartNew()
+
+while (($timer.Elapsed.TotalSeconds -lt $Timeout) -and ($process -eq $None)) {
+	$process = Get-Process -Name "Pritunl.tmp" -ErrorAction SilentlyContinue
+	Start-Sleep -Seconds 1
+}
+
+$timer.Stop()
+
+if ($process -eq $None){
+	exit 1
+}
+
+$process.WaitForExit()
+exit 0
