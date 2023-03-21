@@ -21,7 +21,7 @@ $packageArgs = @{
 # If Pritunl is already installed and running, we have to
 # kill the process. Otherwise the files won't be overwritten.
 
-Get-Process pritunl -ErrorAction SilentlyContinue | Stop-Process
+Get-Process pritunl -ErrorAction SilentlyContinue | Stop-Process -Force
 
 Install-ChocolateyPackage @packageArgs
 
