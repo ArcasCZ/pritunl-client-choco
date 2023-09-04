@@ -2,9 +2,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pritunl-client</id>
-    <version>1.3.3477.5800</version>
+    <version>1.3.3637.7200</version>
     <packageSourceUrl>https://github.com/ArcasCZ/pritunl-client-choco</packageSourceUrl>
-    <owners>Vojtech.Olej,pk33</owners>
+    <owners>Vojtech.Olej</owners>
     <title>pritunl-client (Install)</title>
     <authors>zachhuff386</authors>
     <projectUrl>https://client.pritunl.com/</projectUrl>
