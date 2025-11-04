@@ -4,7 +4,7 @@ $ErrorActionPreference = 'Stop';
 
 $packageName= $env:ChocolateyPackageName
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://github.com/pritunl/pritunl-client-electron/releases/download/1.3.4335.94/Pritunl.exe'
+$url        = 'https://github.com/pritunl/pritunl-client-electron/releases/download/1.3.4392.66/Pritunl.exe'
 
 $packageArgs = @{
   packageName   = $packageName
@@ -12,7 +12,7 @@ $packageArgs = @{
   fileType      = 'EXE'
   url           = $url
   softwareName  = 'pritunl client*'
-  checksum      = '9B582954A9F5ACD91C29BFB8A25183E3F2B826A9F87A06D70D35ECE08BC75F2C'
+  checksum      = '31F491E42F72CDF440E3B7E12780B507842E12EA5FAA5456DA459E6387201BF9'
   checksumType  = 'sha256'
   silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   validExitCodes= @(0,1)
